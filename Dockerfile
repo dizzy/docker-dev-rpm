@@ -14,6 +14,7 @@ RUN yum -y install epel-release; yum clean all && yum -y install git \
   createrepo \
   thttpd \
   libtool \
+  libevent2 \
   openssl-devel \
   java-1.7.0-openjdk \
   java-1.7.0-openjdk-devel \
