@@ -27,7 +27,7 @@ RUN yum -y install epel-release; yum clean all && yum -y install git \
 
 VOLUME ["/home/sipx/sipxcom"]
 
-ADD ./build_rpm.sh /build_rpm.sh
+COPY ./build_rpm.sh /build_rpm.sh
 RUN chmod +x /build_rpm.sh
 
 USER sipx
